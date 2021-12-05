@@ -1,0 +1,10 @@
+^E:\GAME3\GAME3_GDP\CLASTRE_SAMUEL\RAY_TRACING\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Game3/Game3_GDP/Clastre_Samuel/Ray_Tracing -BE:/Game3/Game3_GDP/Clastre_Samuel/Ray_Tracing/build --check-stamp-file E:/Game3/Game3_GDP/Clastre_Samuel/Ray_Tracing/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

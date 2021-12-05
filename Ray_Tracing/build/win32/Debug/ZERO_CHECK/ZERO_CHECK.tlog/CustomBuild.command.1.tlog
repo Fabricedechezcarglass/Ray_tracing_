@@ -1,0 +1,10 @@
+^D:\GAME3\GAME3 GDP\CLASTRE SAMUEL\RAY_TRACING\BUILD\CMAKEFILES\94F38F314F25E3BD8BCE1D5405F80D32\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Game3/Game3 GDP/CLASTRE Samuel/Ray_Tracing" "-BD:/Game3/Game3 GDP/CLASTRE Samuel/Ray_Tracing/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Game3/Game3 GDP/CLASTRE Samuel/Ray_Tracing/build/Raytracing.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
